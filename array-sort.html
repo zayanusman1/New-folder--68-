@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array Sort</title>
+</head>
+
+<body>
+    <h1>Array Sort</h1>
+    <p>Click the button to sort the array in ascending or descending order</p>
+    <button onclick="sortAsc()">Sort Ascending</button>
+    <button onclick="sortDesc()">Sort Descending</button>
+    <p id="result"></p>
+    <script>
+        var p = [40, 100, 1, 5, 25, 10];
+        document.getElementById("result").innerHTML = Points;
+        function sortAsc() {
+            p.sort(function (a, b) { return a - b });
+            document.getElementById("result").innerHTML = p;
+        }
+        function sortDesc() {
+            p.sort(function (a, b) { return b - a });
+            document.getElementById("result").innerHTML = p;
+        }
+    </script>
+</body>
+
+</html>

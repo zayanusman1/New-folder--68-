@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <p>Click the button to evaluate a function:</p>
+    <button onclick="evalFunction()">Evaluate Function</button>
+    <p id="result"></p>
+    <script>
+        function evalFunction() {
+            var x = 10;
+            var y = 20;
+            var a = eval("x + y") + "<br>";
+            var b = eval("2 * 2") + "<br>";
+            var c = eval("y - x") + "<br>";
+            var result = a + b + c;
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
