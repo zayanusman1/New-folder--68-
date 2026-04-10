@@ -3,8 +3,11 @@
 
 <body>
     <p>Click the button to evaluate a function:</p>
-    <button onclick="evalFunction()">Evaluate Function</button>
+    <button onclick="evalFunction(result)">Evaluate Function</button><br>
+
+    <button onclick="Result(demo)">Result</button>
     <p id="result"></p>
+    <p id="demo"></p>
     <script>
         function evalFunction() {
             var x = 10;
@@ -14,6 +17,19 @@
             var c = eval("y - x") + "<br>";
             var result = a + b + c;
             document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    <script>
+        function Result() {
+            var nos = [12, 23, 65, 87, 23, 97];
+            function Result(value) {
+                return value * 10;
+            }
+            var product = nos.map(Result);
+            product = nos.map(function (value) {
+                return value * 10;
+            });
+            document.getElementById("demo").innerHTML = product;
         }
     </script>
 </body>
